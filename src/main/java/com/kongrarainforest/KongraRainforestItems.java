@@ -71,8 +71,7 @@ public class KongraRainforestItems {
                         new Item.Settings()));
 
         // Add all items to the mod's creative tab.
-        ItemGroupEvents.modifyEntriesEvent(
-                new Identifier(KongraRainforestMod.MOD_ID, "main")).register(entries -> {
+        ItemGroupEvents.modifyEntriesEvent(KongraRainforestMod.KONGRA_GROUP_KEY).register(entries -> {
             entries.add(KONGRA_SCALE);
             entries.add(EMERALD_FANG);
             entries.add(JUNGLE_HEART);

@@ -13,6 +13,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -23,9 +25,12 @@ import java.util.UUID;
 public class KongraRainforestMod implements ModInitializer {
     public static final String MOD_ID = "kongrarainforest";
 
+    public static final RegistryKey<ItemGroup> KONGRA_GROUP_KEY = RegistryKey.of(
+            RegistryKeys.ITEM_GROUP, new Identifier(MOD_ID, "main"));
+
     public static final ItemGroup KONGRA_GROUP = Registry.register(
             Registries.ITEM_GROUP,
-            new Identifier(MOD_ID, "main"),
+            KONGRA_GROUP_KEY,
             FabricItemGroup.builder()
                     .displayName(Text.translatable("itemGroup.kongrarainforest.main"))
                     .icon(() -> new ItemStack(KongraRainforestItems.KONGRA_CHESTPLATE))
