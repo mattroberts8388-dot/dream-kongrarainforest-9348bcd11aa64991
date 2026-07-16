@@ -1,5 +1,6 @@
 package com.kongrarainforest;
 
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ArmorItem;
@@ -38,7 +39,7 @@ public class KongraRainforestItems {
 
     public static void registerItems() {
         KONGRA_SCALE = register("kongra_scale",
-                new Item(new Item.Settings().group(null)));
+                new Item(new Item.Settings()));
         EMERALD_FANG = register("emerald_fang",
                 new Item(new Item.Settings()));
         JUNGLE_HEART = register("jungle_heart",
@@ -68,5 +69,22 @@ public class KongraRainforestItems {
         JAGUAR_SPAWN_EGG = (SpawnEggItem) register("jaguar_spawn_egg",
                 new SpawnEggItem(KongraRainforestEntities.JAGUAR, 0xC08A2E, 0x3B2A17,
                         new Item.Settings()));
+
+        // Add all items to the mod's creative tab.
+        ItemGroupEvents.modifyEntriesEvent(
+                new Identifier(KongraRainforestMod.MOD_ID, "main")).register(entries -> {
+            entries.add(KONGRA_SCALE);
+            entries.add(EMERALD_FANG);
+            entries.add(JUNGLE_HEART);
+            entries.add(RAINFOREST_BERRY);
+            entries.add(KONGRA_HELMET);
+            entries.add(KONGRA_CHESTPLATE);
+            entries.add(KONGRA_LEGGINGS);
+            entries.add(KONGRA_BOOTS);
+            entries.add(KongraRainforestBlocks.JUNGLE_HEART_BLOCK);
+            entries.add(KONGRA_SPAWN_EGG);
+            entries.add(TOUCAN_SPAWN_EGG);
+            entries.add(JAGUAR_SPAWN_EGG);
+        });
     }
 }

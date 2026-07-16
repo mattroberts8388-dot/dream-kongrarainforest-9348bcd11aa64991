@@ -11,7 +11,6 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -69,7 +68,7 @@ public class KongraRainforestMod implements ModInitializer {
 
         boolean exposedToRain = player.getWorld().isRaining()
                 && player.getWorld().isSkyVisible(player.getBlockPos())
-                && player.getWorld().getBiome(player.getBlockPos()).value().hasPrecipitation(player.getBlockPos());
+                && player.getWorld().getBiome(player.getBlockPos()).value().hasPrecipitation();
 
         boolean protectedByArmor = KongraArmorMaterial.isFullSetWorn(player);
 
