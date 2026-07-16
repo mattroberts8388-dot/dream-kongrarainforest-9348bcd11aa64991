@@ -1,0 +1,19 @@
+{
+  "itemGroup.kongrarainforest.main": "Kongra Rainforest",
+  "item.kongrarainforest.kongra_scale": "Kongra Scale",
+  "item.kongrarainforest.emerald_fang": "Emerald Fang",
+  "item.kongrarainforest.jungle_heart": "Jungle Heart",
+  "item.kongrarainforest.rainforest_berry": "Rainforest Berry",
+  "item.kongrarainforest.kongra_helmet": "Kongra Helmet",
+  "item.kongrarainforest.kongra_chestplate": "Kongra Chestplate",
+  "item.kongrarainforest.kongra_leggings": "Kongra Leggings",
+  "item.kongrarainforest.kongra_boots": "Kongra Boots",
+  "item.kongrarainforest.kongra_spawn_egg": "Kongra Spawn Egg",
+  "item.kongrarainforest.toucan_spawn_egg": "Toucan Spawn Egg",
+  "item.kongrarainforest.jaguar_spawn_egg": "Jaguar Spawn Egg",
+  "block.kongrarainforest.jungle_heart_block": "Jungle Heart Block",
+  "entity.kongrarainforest.kongra": "KONGRA",
+  "entity.kongrarainforest.toucan": "Toucan",
+  "entity.kongrarainforest.jaguar": "Jaguar",
+  "tooltip.kongrarainforest.kongra_armor": "Rainforest camouflage — the only defense against KONGRA."
+}
